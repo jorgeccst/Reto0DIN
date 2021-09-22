@@ -15,8 +15,22 @@ import mvcDinReto0Model.Model;
  */
 public class Controller {
 
-    public static String getGreeting(String option) {
+     private String model;
+     private String view;
      
+    
+    public Controller(String model, String view){
+    
+       this.model=model;
+       this.view=view;
+       
+        getGreeting(model);
+        
+}
+    private String getGreeting(String option) {
+     
+        option=model;
+        
         String greeting = null;
         
         if(option.equalsIgnoreCase("file")){

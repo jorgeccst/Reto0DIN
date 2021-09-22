@@ -7,6 +7,7 @@ package mvcDinReto0Main;
 
 import mvcDinReto0Controller.Controller;
 import mvcDinReto0Model.ModelFactory;
+import mvcDinReto0View.ViewFactory;
 
 /**
  *
@@ -19,10 +20,13 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Controller controller = new Controller(ModelFactory.getModel(),ViewFactory.getView());
+                    
         
-                           
-        Controller.getGreeting(ModelFactory.getModel());
         
+       
+        
+       
       
         
         
