@@ -5,6 +5,9 @@
  */
 package mvcDinReto0Main;
 
+import mvcDinReto0Controller.Controller;
+import mvcDinReto0Model.ModelFactory;
+
 /**
  *
  * @author 2dam
@@ -16,6 +19,13 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+                           
+        Controller.getGreeting(ModelFactory.getModel());
+        
+      
+        
+        
     }
     
 }

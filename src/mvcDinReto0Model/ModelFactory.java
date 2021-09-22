@@ -5,22 +5,25 @@
  */
 package mvcDinReto0Model;
 
-/**
- *
- * @author 2dam
- */
+import java.util.ResourceBundle;
+
 public class ModelFactory {
     
-    public static  getFactura(String tipo) {
+    public static String getModel() {
  
- if (tipo.equals("iva")) {
- 
- return new FacturaIva();
- }
- else {
- return new FacturaIvaReducido();
- }
- 
+        final String FILENAME = "mvcDinReto0Resources/Config";
+	
+	ResourceBundle model;    
+        
+        String option;
+        
+        model=ResourceBundle.getBundle(FILENAME);
+        option = model.getString("modelType");
+                
+                
+        return option;
+        
+     
  }
     
 }

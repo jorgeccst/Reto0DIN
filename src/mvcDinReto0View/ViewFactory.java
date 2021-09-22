@@ -5,10 +5,31 @@
  */
 package mvcDinReto0View;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author 2dam
  */
 public class ViewFactory {
+    
+     public static String getView() {
+ 
+        final String FILENAME = "mvcDinReto0Resources/config";
+	
+	ResourceBundle model;
+              
+        String option;
+        
+        model=ResourceBundle.getBundle(FILENAME);
+        option = model.getString("viewType");
+                
+                
+        return option;
+        
+     
+ }
+    
+    
     
 }
