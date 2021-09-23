@@ -24,17 +24,13 @@ public class ModelFactory {
            
                            
           if(option.equalsIgnoreCase("file")){
-                              
-            System.out.println(option);
-            
+                      
             Model fileImplementation =new FileModelImplementation();
               modelInstance=fileImplementation;
          
             
         }else if (option.equalsIgnoreCase("db")) {
-            
-             System.out.println(option);
-            
+                                  
              Model dbImplementation =new BDmodelImplementation();
             
             modelInstance=dbImplementation;

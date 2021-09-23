@@ -16,34 +16,26 @@ import mvcDinReto0View.View;
  */
 public class Controller {
 
-     private Model model;
-     private View view;
-     
     
-    public Controller(Model model, View view){
-    
-       this.model=model;
-       this.view=view;
-       
-             
-}
+    public void run(Model model, View view) {
+        
+          showGreeting(view, getGreeting(model)); 
+        
+    }
+
+
     private String getGreeting(Model model) {
      
-        String greeting;
+        String greeting = null;
+
         
-        if(model instanceof FileModelImplementation){
-             System.out.println("file");
-        }
-                 
         greeting=model.getGreeting();
-        
-        showGreeting(view, greeting);
-                     
+                 
         return greeting;
     }
     
     private void showGreeting(View view,String greeting){
-            
+               
         view.showGreeting(greeting);
         
     }

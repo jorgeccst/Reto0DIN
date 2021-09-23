@@ -20,7 +20,11 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Controller controller = new Controller(ModelFactory.getModel(),ViewFactory.getView());
+        Controller controller = new Controller();
+       
+        controller.run(ModelFactory.getModel(), ViewFactory.getView());
+        
+        
                     
         
         

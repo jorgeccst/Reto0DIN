@@ -26,14 +26,16 @@ public class ViewFactory {
         viewType=ResourceBundle.getBundle(FILENAME);
         option = viewType.getString("viewType");
                 
-           if(view instanceof JavaSwingImplementation){
+           if(option.equalsIgnoreCase("swing")){
                
                view= new JavaSwingImplementation();
                
-           } else if(view instanceof TextViewImplementation){
+           } else if(option.equalsIgnoreCase("text")){
                
                view = new TextViewImplementation();
-           }    
+           } else if (option.equalsIgnoreCase("javafx"))   {
+                view = new TextViewImplementation();
+           }
                
         return view;
      
