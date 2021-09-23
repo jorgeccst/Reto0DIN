@@ -8,6 +8,7 @@ package mvcDinReto0Controller;
 import mvcDinReto0Model.BDmodelImplementation;
 import mvcDinReto0Model.FileModelImplementation;
 import mvcDinReto0Model.Model;
+import mvcDinReto0View.View;
 
 /**
  *
@@ -15,11 +16,11 @@ import mvcDinReto0Model.Model;
  */
 public class Controller {
 
-     private String model;
-     private String view;
+     private Model model;
+     private View view;
      
     
-    public Controller(String model, String view){
+    public Controller(Model model, View view){
     
        this.model=model;
        this.view=view;
@@ -27,27 +28,22 @@ public class Controller {
         getGreeting(model);
         
 }
-    private String getGreeting(String option) {
+    private String getGreeting(Model model) {
      
-        option=model;
+        String greeting;
         
-        String greeting = null;
-        
-        if(option.equalsIgnoreCase("file")){
-                              
-            System.out.println(option);
-            
-            Model fileImplementation =new FileModelImplementation();
-            greeting=fileImplementation.getGreeting();
-            
-        }else if (option.equalsIgnoreCase("db")) {
-            
-             System.out.println(option);
-            
-             Model dbImplementation =new BDmodelImplementation();
-             greeting=dbImplementation.getGreeting();
-            
+        if(model instanceof FileModelImplementation){
+             System.out.println("file");
         }
+        
+              
+        greeting=model.getGreeting();
+        
+       
+        
+       
+            
+        
               
         return greeting;
     }

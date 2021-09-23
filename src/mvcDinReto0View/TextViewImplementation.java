@@ -6,14 +6,18 @@
 package mvcDinReto0View;
 
 import javax.swing.JFrame;
+import mvcDinReto0View.View;
 
 /**
  *
  * @author 2dam
  */
-public interface View {
-    
-    public void showGreeting();
- 
+public class TextViewImplementation implements View{
+
+    @Override
+    public void showGreeting() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+  
     
 }

@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
  */
 public class ViewFactory {
     
-     public static String getView() {
+     public static View getView() {
  
         final String FILENAME = "mvcDinReto0Resources/config";
 	

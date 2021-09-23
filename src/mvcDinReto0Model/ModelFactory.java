@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 public class ModelFactory {
     
-    public static String getModel() {
+    public static Model getModel() {
  
         final String FILENAME = "mvcDinReto0Resources/Config";
 	
@@ -19,9 +19,28 @@ public class ModelFactory {
         
         model=ResourceBundle.getBundle(FILENAME);
         option = model.getString("modelType");
-                
-                
-        return option;
+        
+        Model modelInstance = null;
+           
+                           
+          if(option.equalsIgnoreCase("file")){
+                              
+            System.out.println(option);
+            
+            Model fileImplementation =new FileModelImplementation();
+              modelInstance=fileImplementation;
+         
+            
+        }else if (option.equalsIgnoreCase("db")) {
+            
+             System.out.println(option);
+            
+             Model dbImplementation =new BDmodelImplementation();
+            
+            modelInstance=dbImplementation;
+        }
+               
+        return modelInstance;
         
      
  }
