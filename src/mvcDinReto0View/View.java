@@ -13,7 +13,9 @@ import javax.swing.JFrame;
  */
 public interface View {
     
-    public void showGreeting();
+    public void showGreeting(String greeting);
+
+   
  
     
 }

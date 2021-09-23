@@ -15,18 +15,27 @@ public class ViewFactory {
     
      public static View getView() {
  
+         View view = null;
+         
         final String FILENAME = "mvcDinReto0Resources/config";
 	
-	ResourceBundle model;
+	ResourceBundle viewType;
               
         String option;
         
-        model=ResourceBundle.getBundle(FILENAME);
-        option = model.getString("viewType");
+        viewType=ResourceBundle.getBundle(FILENAME);
+        option = viewType.getString("viewType");
                 
-                
-        return option;
-        
+           if(view instanceof JavaSwingImplementation){
+               
+               view= new JavaSwingImplementation();
+               
+           } else if(view instanceof TextViewImplementation){
+               
+               view = new TextViewImplementation();
+           }    
+               
+        return view;
      
  }
     

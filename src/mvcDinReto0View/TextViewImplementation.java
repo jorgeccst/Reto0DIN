@@ -14,9 +14,10 @@ import mvcDinReto0View.View;
  */
 public class TextViewImplementation implements View{
 
+
     @Override
-    public void showGreeting() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void showGreeting(String greeting) {
+       
     }
   
     

@@ -25,8 +25,7 @@ public class Controller {
        this.model=model;
        this.view=view;
        
-        getGreeting(model);
-        
+             
 }
     private String getGreeting(Model model) {
      
@@ -35,18 +34,21 @@ public class Controller {
         if(model instanceof FileModelImplementation){
              System.out.println("file");
         }
-        
-              
+                 
         greeting=model.getGreeting();
         
-       
-        
-       
-            
-        
-              
+        showGreeting(view, greeting);
+                     
         return greeting;
     }
+    
+    private void showGreeting(View view,String greeting){
+            
+        view.showGreeting(greeting);
+        
+    }
+    
+    
     
     
 }
