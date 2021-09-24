@@ -5,11 +5,14 @@
  */
 package mvcDinReto0Model;
 
+import static java.lang.Class.forName;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,7 +24,7 @@ public class BDConnection {
     private String conn;
     private String dbUser;
     private String dbPass;
-    
+    private String Driver;
 
     public BDConnection() {
 
@@ -31,7 +34,7 @@ public class BDConnection {
         conn = configFile.getString("Conn");
         dbUser = configFile.getString("DBUser");
         dbPass = configFile.getString("DBPass");
-      
+      Driver = configFile.getString("Driver");
 
     }
 
@@ -42,14 +45,20 @@ public class BDConnection {
         try {
             //String url = "jdbc:mysql://localhost/nombreBaseDatos";
             //con =  DriverManager.getConnection(url+"?" +"user=____&password=_____");
-
+            Class.forName(Driver);
             con = DriverManager.getConnection(conn, dbUser, dbPass);
-
-        } catch (SQLException e) {
-
-        }
+            
+            
+            
+        } catch (SQLException e){
+            
+        } catch (ClassNotFoundException ex) {
+             Logger.getLogger(BDConnection.class.getName()).log(Level.SEVERE, null, ex);
+         }
         return con;
     }
+    
+    
 
     public void closeConnection(PreparedStatement stmt, Connection con) throws SQLException {
 
