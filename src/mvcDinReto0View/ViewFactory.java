@@ -34,7 +34,7 @@ public class ViewFactory {
                
                view = new TextViewImplementation();
            } else if (option.equalsIgnoreCase("javafx"))   {
-                view = new TextViewImplementation();
+                view = new JavaFxImplementation();
            }
                
         return view;

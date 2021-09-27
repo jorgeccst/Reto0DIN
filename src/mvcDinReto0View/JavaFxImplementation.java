@@ -5,6 +5,8 @@
  */
 package mvcDinReto0View;
 
+import javafx.stage.Stage;
+
 /**
  *
  * @author 2dam
@@ -14,7 +16,9 @@ public class JavaFxImplementation implements View{
     
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        FXView fx=new FXView(greeting);
+      
+       
     }
     
 }
