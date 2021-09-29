@@ -30,11 +30,11 @@ public class ViewFactory {
                
                view= new JavaSwingImplementation();
                
-           } else if(option.equalsIgnoreCase("text")){
-               
+           } else if(option.equalsIgnoreCase("text")){               
                view = new TextViewImplementation();
            } else if (option.equalsIgnoreCase("javafx"))   {
                 view = new JavaFxImplementation();
+                
            }
                
         return view;

@@ -9,6 +9,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -16,48 +18,63 @@ import java.sql.SQLException;
  */
 public class BDmodelImplementation implements Model {
 
-    private Connection con;
-    private PreparedStatement stmt;
-    private BDConnection db = new BDConnection();
-    private final String getGreet = "select * from greeting";
+    
+     
+	private Connection con;
+	private PreparedStatement stmt;
+	private BDConnection db = new BDConnection();
 
+	private final String GETGREETING = "SELECT * FROM greeting";
+    
+    
     @Override
     public String getGreeting() {
-        ResultSet rs = null;
-        String result = null;
-        con = db.openConnection();
+       
+      
+     
+                ResultSet rs = null;
+		
+                String greeting = null;
+        
+		con = db.openConnection();
 
-        try {
-            stmt = con.prepareStatement(getGreet);
-            rs = stmt.executeQuery();
-            if (rs.next()) {
-                result = rs.getString(1);
-            } else {
-                result = null;
-            }
-        } catch (SQLException e) {
+		try {
+                                     
+			stmt = con.prepareStatement(GETGREETING);
+		
+			rs = stmt.executeQuery();
 
-            
-            
-            e.printStackTrace();
-        } finally {
+			if (rs.next()) {
+			
+                            greeting=rs.getString(1);
+                            
+			} else
+				greeting=null;
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
 
-            if (rs != null) {
-                try {
-                    rs.close();
-                } catch (SQLException ex) {
-
-                }
-            }
+			if (rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException ex) {
+					
+				}
+			}
             try {
                 db.closeConnection(stmt, con);
-            } catch (SQLException e) {
-
-                e.printStackTrace();
+            } catch (SQLException ex) {
+                Logger.getLogger(BDmodelImplementation.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+		}
 
-        return result;
+		return greeting;
+        
+        
     }
 
+    
+
 }
+   
