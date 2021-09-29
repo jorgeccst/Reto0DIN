@@ -1,13 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *This package contains the interfaces and the DB implementations of the application.
  */
 package mvcDinReto0Model;
 
 /**
- *
- * @author 2dam
+ * Model interface class.
+ * This Interface generates the method that is going to be used in the model implementations.
+ * @author Jorge & Adrián.
  */
 public interface Model {
     

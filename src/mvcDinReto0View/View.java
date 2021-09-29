@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+This package contains the different views that can be used.(javaFX,JavaSwing and command line).
  */
 package mvcDinReto0View;
 
 import javax.swing.JFrame;
 
 /**
- *
+ * View interface class.
+ * This Interfaces generates the method that is going to be used in the view implementations.
  * @author 2dam
  */
 public interface View {
-    
+    /**
+     * 
+     * @param greeting = String variable where the greeting is stored.
+     */
     public void showGreeting(String greeting);
-
    
- 
-    
 }
