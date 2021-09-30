@@ -8,11 +8,15 @@ import mvcDinReto0View.View;
 
 /**
  *
- * @author 2dam
+ * @author Jorge & Adrián.
  */
 public class TextViewImplementation implements View{
 
-
+    /**
+     * This method receives the greeting and prints it on the command line
+     * @param greeting =String variable that stores the greeting
+     */
+    
     @Override
     public void showGreeting(String greeting) {
        

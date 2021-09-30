@@ -12,11 +12,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * File model implementation
+ * This class implements the model interface in order to get the greeting with a file implemementation method.
+ * 
  * @author Jorge & Adrián.
  */
 public class FileModelImplementation implements Model{
 
+    
+    /**
+     * This method obtain and reads the file while it has lines.
+     * @return Greeting= String variable that stores the greeting.
+     */
     @Override
     public String getGreeting() {
        

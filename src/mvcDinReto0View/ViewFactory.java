@@ -8,11 +8,11 @@ import java.util.ResourceBundle;
 /**
  * View interface instance generator class.
  *This class generates an instance of the view Interface.
- * @author 2dam
+ * @author Jorge & Adrián.
  */
 public class ViewFactory {
     /**
-     * 
+     * This method returns an instance of the view interface by reading the .Properties file.
      * @return View = an instance of the view interface
      */
      public static View getView() {

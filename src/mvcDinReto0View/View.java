@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 /**
  * View interface class.
  * This Interfaces generates the method that is going to be used in the view implementations.
- * @author 2dam
+ * @author Jorge & Adrián.
  */
 public interface View {
     /**

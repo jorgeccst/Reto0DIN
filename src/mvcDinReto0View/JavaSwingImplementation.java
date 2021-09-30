@@ -7,7 +7,7 @@ package mvcDinReto0View;
 
 /**
  *
- * @author 2dam
+ * @author Jorge & Adrián
  */
 public class JavaSwingImplementation extends javax.swing.JFrame implements View{
 

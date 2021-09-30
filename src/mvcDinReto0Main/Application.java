@@ -9,11 +9,12 @@ import mvcDinReto0View.ViewFactory;
 
 /**
  *
- * @author 2dam
+ * @author Jorge & Adrián.
  */
 public class Application {
 
     /**
+     * main method of the application.
      * @param args the command line arguments
      */
     public static void main(String[] args) {

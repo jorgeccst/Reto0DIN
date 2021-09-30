@@ -13,15 +13,21 @@ import java.util.ResourceBundle;
  */
 public class ModelFactory {
     
+    
+    /**
+     * This method returns an instance of the model interface reading the .properties file.
+     * @return modelInstance = Model instance
+     */
+    
     public static Model getModel() {
  
-        final String FILENAME = "mvcDinReto0Resources/Config";
+       
 	
 	ResourceBundle model;    
         
         String option;
         
-        model=ResourceBundle.getBundle(FILENAME);
+        model=ResourceBundle.getBundle("mvcDinReto0Resources/config");
         option = model.getString("modelType");
         
         Model modelInstance = null;

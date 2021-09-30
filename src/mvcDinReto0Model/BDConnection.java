@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Database connection class.
  * @author Jorge & Adrián.
  */
 public class BDConnection {
@@ -24,6 +24,11 @@ public class BDConnection {
     private String dbPass;
     private String Driver;
 
+    
+    /**
+     * Class constructor
+     * Here the config
+     */
     public BDConnection() {
 
         configFile = ResourceBundle.getBundle("mvcDinReto0Resources.config");

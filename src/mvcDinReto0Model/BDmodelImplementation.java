@@ -25,7 +25,10 @@ public class BDmodelImplementation implements Model {
 
 	private final String GETGREETING = "SELECT * FROM greeting";
     
-    
+    /**
+     * This method executes getgreeting statement to receive it.
+     * @return greeting =String variable where the greeting is stored.
+     */
     @Override
     public String getGreeting() {
        

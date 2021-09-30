@@ -13,8 +13,9 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
- *
- * @author 2dam
+ * JavaFx view class
+ * This javaFx window displays the greeting.
+ * @author Adrián & Jorge
  */
 public class JavaFxImplementation extends Application implements View{
 
@@ -22,9 +23,7 @@ public class JavaFxImplementation extends Application implements View{
     
     @Override
     public void start(Stage primaryStage) {
-       
-       
-        
+                      
         Label label = new Label();
         label.setText(greeting);
         
@@ -40,6 +39,7 @@ public class JavaFxImplementation extends Application implements View{
     }
 
     /**
+     * View interface method implementation.
      * @param args the command line arguments
      */
     @Override
