@@ -6,7 +6,7 @@ package mvcDinReto0Model;
 /**
  * Model interface class.
  * This Interface generates the method that is going to be used in the model implementations.
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public interface Model {
     

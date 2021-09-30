@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 /**
  * JavaFx view class
  * This javaFx window displays the greeting.
- * @author Adrián & Jorge
+ *@author Adrián_Jorge
  */
 public class JavaFxImplementation extends Application implements View{
 
@@ -37,10 +37,10 @@ public class JavaFxImplementation extends Application implements View{
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
+    
     /**
      * View interface method implementation.
-     * @param args the command line arguments
+     *@param greeting = String that stores the greeting;
      */
     @Override
     public void showGreeting(String greeting) {   

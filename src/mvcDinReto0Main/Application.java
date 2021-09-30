@@ -9,7 +9,7 @@ import mvcDinReto0View.ViewFactory;
 
 /**
  *
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class Application {
 

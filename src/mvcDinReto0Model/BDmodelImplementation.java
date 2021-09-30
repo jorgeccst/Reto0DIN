@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 /**
  *Model implementation class.
  * This class implements the model interface in order to generate the methods for db data manipulation. 
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class BDmodelImplementation implements Model {
 

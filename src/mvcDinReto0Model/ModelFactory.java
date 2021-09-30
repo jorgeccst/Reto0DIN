@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 /**
  *Model Factory class.
  * This Interfaces generates the method that is going to be used in the model implementations.
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class ModelFactory {
     

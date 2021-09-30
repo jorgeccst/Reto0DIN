@@ -7,7 +7,7 @@ package mvcDinReto0View;
 
 /**
  *
- * @author Jorge & Adrián
+ * @author Jorge_Adrián
  */
 public class JavaSwingImplementation extends javax.swing.JFrame implements View{
 
@@ -22,8 +22,6 @@ public class JavaSwingImplementation extends javax.swing.JFrame implements View{
         initComponents();           
         this.setVisible(true);
     }
-
-   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -60,14 +58,14 @@ public class JavaSwingImplementation extends javax.swing.JFrame implements View{
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * @param greeting = String variable that stores the greeting;
+     */
+    
     @Override
     public void showGreeting(String greeting) {
       this.greeting=greeting;

@@ -8,7 +8,7 @@ import mvcDinReto0View.View;
 
 /**
  *
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class TextViewImplementation implements View{
 

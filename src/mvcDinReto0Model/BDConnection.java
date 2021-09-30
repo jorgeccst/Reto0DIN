@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  * Database connection class.
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class BDConnection {
      private ResourceBundle configFile;

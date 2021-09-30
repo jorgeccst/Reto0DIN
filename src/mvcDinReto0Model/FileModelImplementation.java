@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * File model implementation
  * This class implements the model interface in order to get the greeting with a file implemementation method.
  * 
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class FileModelImplementation implements Model{
 

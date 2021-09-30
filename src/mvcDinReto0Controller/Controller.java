@@ -10,7 +10,7 @@ import mvcDinReto0View.View;
 
 /**
  * This class receives the greeting and shows it on screen, all of this thanks to the factories that return different instances.  
- * @author Jorge & Adrián.
+ * @author Jorge_Adrián.
  */
 public class Controller {
 
