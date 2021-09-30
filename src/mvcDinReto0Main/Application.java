@@ -1,5 +1,5 @@
 /**
- This package contains the main class of the application.
+ *This package contains the main class of the application.
  */
 package mvcDinReto0Main;
 
@@ -8,7 +8,7 @@ import mvcDinReto0Model.ModelFactory;
 import mvcDinReto0View.ViewFactory;
 
 /**
- *
+ * Main class of the application, it generates an instance of the controller and starts running.
  * @author Jorge_Adrián.
  */
 public class Application {

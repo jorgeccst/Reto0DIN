@@ -7,7 +7,8 @@ import javax.swing.JFrame;
 import mvcDinReto0View.View;
 
 /**
- *
+ *text view class
+ * This text output displays the greeting.
  * @author Jorge_Adrián.
  */
 public class TextViewImplementation implements View{

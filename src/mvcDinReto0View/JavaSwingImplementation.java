@@ -6,7 +6,8 @@
 package mvcDinReto0View;
 
 /**
- *
+ * Swing view class
+ * This Swing window displays the greeting.
  * @author Jorge_Adrián
  */
 public class JavaSwingImplementation extends javax.swing.JFrame implements View{

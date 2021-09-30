@@ -29,8 +29,7 @@ public class Controller {
      * Method that receives the model instance and uses its methods to get the greeting and store it on a String.
      * @param model = model instance received from  the model factory.
      * @return greeting = String value received from the getGreeting method of the model.
-     */
-    
+     */    
     private String getGreeting(Model model) {
      
         String greeting = null;
